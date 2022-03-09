@@ -1,0 +1,24 @@
+{% extends "index.html" %}
+{% block body%}
+    <body class="bodyCrear">
+        <div class="encabezado">
+            <h1 class="tituloCrear">Add a New User</h1>
+            <a href="/users" class="aCrear">Home</a>
+        </div>
+        <form action="/create_user" method="POST">
+            <div class="campo">
+                <label for="fname">First Name:</label>
+                <input type="text" name="fname">
+            </div>
+            <div class="campo">
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname">
+            </div>
+            <div class="campo">
+                <label for="email" >Email:</label>
+                <input type="email" name="email">
+            </div>
+            <button type="submit">Create</button>
+        </form>
+    </body>
+{% endblock %}

@@ -1,0 +1,30 @@
+{% extends "index.html" %}
+{% block body%}
+    <body class="bodyCrear">
+        <div class="encabezado">
+            <h1 class="tituloCrear">Edit User {{idusaurio}}</h1>
+            <a href="/users" class="aCrear">Home</a>
+        </div>
+        <form action="/updated_user" method="POST">
+            <input type="hidden" name="id" value="{{idusaurio}}"/>
+            {% for one_friend in all_friends %}
+                <div class="campo">
+                    <label for="fname">First Name:</label>
+                    <input type="text" name="fname" value="{{one_friend.first_name}}">
+                </div>
+                <div class="campo">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" name="lname" value="{{one_friend.last_name}}">
+                </div>
+                <div class="campo">
+                    <label for="email" >Email:</label>
+                    <input type="email" name="email" value="{{one_friend.email}}">
+                </div>
+            {% endfor %}
+            <div class="campoBotonEditar">
+                <button type="submit">Update</button>
+                <a href="/users/{{idusaurio}}" class="AEditar">Show User</a>
+            </div>
+        </form>
+    </body>
+{% endblock %}

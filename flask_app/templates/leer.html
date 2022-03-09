@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+{% block body%}
+    <body class="bodyLeer">
+        <h1 class="tituloLeer">All Users</h1>
+        {% if tamañoBase==0 %}
+            <p>No hay ningun usuario registrado. Por favor ingresa un usuario</p>
+        {% else %}
+            <table class="table table-bordered table-striped table-sm tabla">
+                <thead class="table-secondary">
+                    <tr>
+                        <th>ID</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Created At</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for one_friend in all_friends %}
+                        <tr>
+                            <td>{{one_friend.id}}</td>
+                            <td>{{one_friend.first_name}} {{one_friend.last_name}}</td>
+                            <td>{{one_friend.email}}</td>
+                            <td>{{one_friend.created_at}}</td>
+                            <td>
+                                <a href="/users/{{one_friend.id}}">Show</a>
+                                <span>|</span>
+                                <a href="/users/{{one_friend.id}}/edit">Edit</a>
+                                <span>|</span>
+                                <a href="/{{one_friend.id}}">Delete</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% endif %}
+        <a href="/users/new" class="aLeer">Add a New User</a>
+    </body>
+{% endblock %}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script type = "text/javascript"  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script type = "text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type = "text/javascript"  src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Usuarios CRUD</title>
+</head>
+{% block body%}
+    <body class="body">
+        <div>
+            <h1 class="Welcome">Welcome!</h1>
+            <p class="indexP">choose an option</p>
+        </div>
+        <div class="contendor">
+            <div class="opcion">
+                <a href="/users" class="indexA">All Users</a>
+            </div>
+            <div class="opcion">
+                <a href="/users/new" class="indexA">Add a New User</a>
+            </div> 
+        </div>
+    </body>
+{% endblock %}
+</html>

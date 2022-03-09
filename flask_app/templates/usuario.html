@@ -1,0 +1,22 @@
+{% extends "index.html" %}
+{% block body%}
+    <body class="bodyCrear">
+        <div class="encabezado">
+            <h1 class="tituloCrear">User {{idusaurio}}</h1>
+            <a href="/users" class="aCrear">Home</a>
+        </div>
+        <div class="campoUsuario">
+            {% for one_friend in all_friends %}
+                <p class="textoUsuario">Full Name : {{one_friend.first_name}} {{one_friend.last_name}}</p>
+                <p class="textoUsuario">Email : {{one_friend.email}}</p>
+                <p class="textoUsuario">Created On : {{one_friend.created_at}}</p>
+                <p class="textoUsuario">Last Updated On : {{one_friend.updated_at}}</p>
+            {% endfor %}
+        </div>
+        <div class="elencesUsuario">
+            <a href="/users/{{idusaurio}}/edit" class="letraEUsuario">Edit</a>
+            <span class="spanUsuario">|</span>
+            <a href="/{{idusaurio}}" class="letraEUsuario">Delete</a>
+        </div>
+    </body>
+{% endblock %}

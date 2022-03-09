@@ -1,0 +1,192 @@
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contendor
+{
+    background-color: #8cc4ad;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 380px;
+    width: 60%;
+}
+
+.opcion
+{
+    background-color: cadetblue;
+    border-radius: 10px;
+    width: 40%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Welcome
+{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.indexP
+{
+    text-align: center;
+}
+
+.Welcome,.indexP
+{
+    margin-bottom: 30px;
+}
+
+.indexA, .indexP
+{
+    font-size: 30px;
+}
+
+.indexA
+{
+    color: black;
+    font-weight: bold;
+}
+
+.indexA:hover
+{
+    text-decoration: none;
+    color: black;
+}
+
+.bodyLeer
+{
+    padding: 20px 60px 0px 60px;
+}
+
+.tituloLeer
+{
+    font-size: 66px;
+    margin-bottom: 30px;
+}
+
+.tabla
+{
+    font-size: 36px;
+    font-weight: lighter;
+    margin-bottom: 40px;
+}
+
+.aLeer
+{
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.bodyCrear
+{
+    padding: 20px 100px 0px 100px;
+}
+
+.encabezado
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tituloCrear
+{
+    font-size: 80px;
+    margin-bottom: 30px; 
+}
+
+.aCrear
+{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+form
+{
+    width: 56%;
+}
+
+label
+{
+    font-size: 40px;
+    font-weight: lighter;
+}
+
+input
+{
+    height: 42px;
+}
+
+.campo
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+button
+{
+    padding: 10px 20px 10px 20px;
+    font-size: 30px;
+    border-radius: 5px;
+    background-color: #177246;
+    color: white;
+    border: 2px solid #8cc4ad;
+    margin-top: 16px;
+}
+
+.campoUsuario
+{
+    border: 1px solid black;
+    width: fit-content;
+    padding: 0px 10px 0px 10px;
+}
+
+.textoUsuario
+{
+    font-size: 50px;
+    font-weight: lighter;
+}
+
+.elencesUsuario
+{
+    margin-top: 100px;
+}
+
+.letraEUsuario
+{
+    font-size: 40px;
+}
+
+.spanUsuario
+{
+    font-weight: bold;
+    padding: 0px 20px 0px 20px;
+    font-size: 30px;
+}
+
+.campoBotonEditar
+{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.AEditar
+{
+    font-size: 28px;
+    margin-left: 80px;
+}
